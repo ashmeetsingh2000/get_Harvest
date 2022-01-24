@@ -1,0 +1,272 @@
+.section_first{
+    text-align: center;
+    background-color: #F8F5F1;
+    padding: 130px 0px;
+    margin-top: -80px;
+}       
+        .section_first h1{
+            color: #464646;
+            font-size: 50px;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-bottom: 30px;
+        }
+        .choosePlan{
+            font-size: 14px;
+        }
+        .choosePlan span{
+            font-weight: 500;
+        }
+        .switch{
+            color: #F36C00;
+        }
+        .active{opacity: 1;}
+        .active:hover{
+            cursor:default;
+        }
+        .unactive{opacity: 0.5;}
+        .unactive:hover{
+            color: #F36C00;
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        .choosePlan button{
+            width: 75px;
+            margin: 0px 20px;
+            background-color: transparent;
+            padding: 1px 10px;
+        }
+        .planDetails{
+            width: 750px;
+            margin: 25px auto;
+            padding: 30px 0px;
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid rgb(0,0,0,0.2);
+            box-shadow:2px 2px 20px rgb(0,0,0,0.1);
+        }
+        .planFirst{
+            width: 100%;
+            border-right: 1px solid rgb(0,0,0,0.1);
+            padding-bottom: 20px;
+        }
+        .planSecond{
+            width: 100%;
+        }
+        .p1{
+            font-weight: 600;
+            font-size: 30px;
+            color: #F36C00;
+            margin-bottom: 10px;
+        }
+        .p2{
+            opacity: 0.9;
+        }
+        .p3{
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        .p4 b{
+            position: relative;
+            top:-25px;
+            left:-3px
+        }
+        .p4{
+            font-size: 20px;
+            font-weight: 500;
+            opacity: 0.7;
+        }
+        .p5{
+            font-size: 18px;
+            font-weight: 600;
+            opacity: 0.6;
+        }
+        .planDetails span{
+            font-size: 55px;
+            font-weight: bold;
+        }
+        @media screen and (max-width:800px){
+            .planDetails{
+                width: 90%;
+                flex-direction: column;
+            }
+            .planFirst{
+                width: 90%;
+                margin: auto;
+                border: unset;
+                border-bottom: 1px solid rgb(0,0,0,0.1);
+                margin-bottom: 20px;
+            }
+        }
+
+
+        .button2{
+
+            background-color: #19a700;
+            border: 1px solid green;
+            border-radius: 6px;
+            color: white;
+            font-weight: bold;
+            font-size: 19px;
+            padding: 18px 25px;
+            margin-top: 25px;
+            margin-bottom:10px;
+        }
+        .button2:hover{
+            background-color: #179201;
+        }
+        
+        .section_first h3{
+            color: #464646;
+            display: inline-block;
+            padding: 0px 15px;
+            background-color: #F8F5F1;
+            position: relative;
+            top:25px;
+        }
+        .plans{
+            border-top: 0.1px solid rgb(0,0,0,0.1);
+            width: 720px;
+            text-align: left;
+            display: flex;
+            margin: auto;
+            padding: 20px;
+            justify-content: space-around;
+        }
+        .plans i{
+            position: relative;
+            top:3px;
+            font-size: 25px;
+            color: #28b60f;
+        }
+        .plans span{
+            margin-bottom: 7px;
+            font-size:17px;
+        }
+        .plans div{
+            display: flex;
+            flex-direction: column;
+        }
+        @media screen and (max-width:900px){
+            .plans{
+                width:90%
+            }
+        }
+        @media screen and (max-width:670px){
+            .plans{
+                width:90%;
+                flex-direction: column;
+            }
+        }
+
+
+
+
+.section_second{
+    margin-top: 40px;
+    text-align: center;
+}
+        .section_second_review{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;    
+        }
+        .section_second_review p{
+            font-size: 18px;
+            font-weight:bold;
+            opacity: 0.7;
+            font-family: "Brndn","Brandon Text","Helvetica Neue",Helvetica,Arial,sans-serif;;
+            margin-bottom: 20px;
+           
+        }
+        .section_second_review img{     
+            width: 40px;
+            border-radius: 50%;
+        }
+        .reviewbox1{
+            width: 420px;
+            padding: 20px; 
+        }
+        .reviewbox2{
+            border-left: 1px solid rgb(0,0,0,0.1);
+            width: 420px;
+            padding: 20px; 
+        }
+        @media screen and (max-width:900px){
+            .reviewbox2{
+                display: none;
+            }
+            .reviewbox1{
+                width: 100% ;
+                padding: unset;
+            }
+        }
+        .section_second h1{
+            opacity: 0.7;
+            margin: 40px 0px 40px 0px;
+        }
+    
+        
+
+
+.section_third{
+    width: 100%;
+    padding: 40px 0px 20px 0px;
+    background-color: #F8F5F1;
+}
+        .section_third_content{
+            text-align: center;
+        }
+        .section_third_content h1{
+            font-size: 40px;
+            color:#656464;
+            padding-bottom: 5px;
+        }
+        .section_third_content p{
+            opacity: 0.8;
+            color: #464646;
+            font-size:28px;
+            padding-bottom: 20px;
+        }
+
+
+        .section_third_button{
+            text-align: center;
+            margin: 10px 0px 40px 0px;
+        }
+        .section_third_button button{
+            padding: 20px;
+            color: #FFFFF0;
+            font-size: 20px;
+            font-weight: 600;
+            border: 0;
+            border-radius: 5px;
+            background-color: #19a700;
+            border: 1px solid green;
+            margin-bottom: 12px;
+        }
+        .section_third_button button:hover{
+            background-color: #179201;
+        }
+
+        .section_third_img{
+            width: 75%;
+            margin: 10px auto 0px auto;
+            justify-content: space-evenly;
+            display: flex;
+            opacity: 0.5;
+            padding-top: 30px;
+        }
+
+                
+        @media screen and (max-width: 765px) {
+            .section_third_img{
+                flex-direction: column;
+            }
+            .img{
+                padding-top: 10px;
+                margin: auto;
+            }
+        }

@@ -1,0 +1,174 @@
+    .navbar {
+        background-color: transparent;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .nabar_white{
+        transition: .3s ease;
+        background-color: white;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        max-width: 1500px;
+    }
+    
+    .nav-logo {
+        color: #F36C00;
+        align-items: center;
+        margin-left: 20px;
+        margin-top: -5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 2rem;
+        flex-grow: 10;
+        font-weight: bold;
+    }
+    
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        margin-right: 1rem;
+    }
+    
+    .nav-links {
+        color:black;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        height: 100%;
+        border-bottom: 3px solid transparent;
+    }
+    .fa-code {
+        margin-left: 1rem;
+    }
+    
+    .nav-item {
+        line-height: 40px;
+        margin-right: 0.5rem;
+        font-size: 1.4vw;
+        text-decoration: none;
+        opacity: 1;
+    }
+    .nav-item:hover{
+        text-decoration: none;
+    }
+    
+    .nav-item:after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width 0.7s ease;
+    }
+    .nav-item:hover:after {
+        width: 100%;
+        background-color: #bbbbbb;
+    }
+    .show{
+        transition: unset;
+        background-color: #E4E1DD;
+        border-radius: 3px;
+    }
+    .nav-icon {
+        display: none;
+    }
+    .forsidebar{
+        display: flex;
+    }
+    .button{
+        text-decoration: none;
+        padding:9px 15px 10px 15px ;
+        background-color: #30ac1b;
+        border-radius: 5px;
+        font-weight: bold;
+        color:white !important;
+    }
+    .button:hover{
+        background-color: #39c720;
+    }
+  
+    @media screen and (max-width: 900px) {
+        .navbar {
+            background-color: #ff6600;
+        }
+        .nav-logo {
+            color: white;
+        }
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #ff6600 0%, #ff9933 100%);
+            width: 100%;
+            position: absolute;
+            top: 70px;
+            left: -110%;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+            text-align: left;
+        }
+        .nav-menu.active {
+            left: 0px;
+            opacity: 1;
+            z-index: 1;
+        }
+        .nav-item{
+            font-size: 17px;
+            border-radius: 5px;
+            background:rgba(225, 225, 225, 0.2);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+        .nav-item:hover{
+            background:rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+        }
+        .nav-item:hover:after{
+            background-color: unset;
+        }
+        .show{
+            background-color: unset;
+        }
+        .nav-links {
+            color: white;   
+        }
+        .nav-icon {    
+            display: block;
+            position: relative;
+            top:-25px;
+            left: 80px;
+            transform: translate(-100%, 60%);
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: white;
+        }
+        .forsidebar{
+            margin-top:20px;
+            justify-content: center;
+        }
+        .fill{
+            padding: 0px 45px;
+        }
+        .button{
+            background-color:unset;
+            border-radius: unset;
+            font-weight: unset;
+        }
+        .button:hover{
+            background-color: unset;
+        }
+    }
+  
